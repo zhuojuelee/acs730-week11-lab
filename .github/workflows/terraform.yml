@@ -62,7 +62,7 @@ jobs:
       security-events: write
     steps:
       - name: Clone repo
-        uses: github/codeql-action@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
 
