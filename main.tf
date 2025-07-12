@@ -28,7 +28,8 @@ provider "aws" {
 }
 
 resource "aws_security_group" "web-sg" {
-  name = "web-sg"
+  name        = "web-sg"
+  description = "Web security group"
   ingress {
     from_port   = 8080
     to_port     = 8080
